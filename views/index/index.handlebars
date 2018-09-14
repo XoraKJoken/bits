@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <h5>Welcome friend</h5>
+    <p>We need to get a bit of information so we can help you along (don't worry this is for character creation purpose only)</p>
+    <form class="" action="/create-player" method="post">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="First Name" id="firstName" name="firstName" type="text" class="validate">
+          <label for="firstName">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Last Name" id="lastName" name="lastName" type="text" class="validate">
+          <label for="lastName">Last Name</label>
+        </div>
+        <div class="input-field col s12">
+          <p class="range-field">
+            <label for="age">Age</label>
+            <input type="range" id="age" name="age" min="18" max="100" />
+          </p>
+        </div>
+        <button class="btn waves-effect waves-light center-align" type="submit" name="action">
+          Submit<i class="material-icons right submit-arrow">keyboard_arrow_right</i>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

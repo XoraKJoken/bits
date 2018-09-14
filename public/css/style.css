@@ -1,0 +1,51 @@
+input {
+  color: #c7cce6 !important;
+}
+
+input[type=text]:not(.browser-defaults):focus:not([readonly]) {
+  border-bottom: 1px solid #b6beea;
+  -webkit-box-shadow: 0 1px 0 0 #b6beea;
+  box-shadow: 0 1px 0 0 #b6beea;
+}
+
+label {
+  color: #c7cce6 !important;
+}
+
+input label {
+  color: #c7cce6 !important;
+}
+
+.nav-wrapper {
+  background-color: #181b2a !important;
+}
+
+.nav-wrapper a {
+  color: #c7cce6 !important;
+}
+
+nav .brand-logo {
+  color: #c7cce6;
+}
+
+input[type=range] {
+  border: 1px solid #ffffff00 !important;
+}
+
+.btn {
+  background-color: #7a98f7;
+  color: #e9eefe;
+}
+
+.btn:hover {
+  background-color: #647cc7;
+}
+
+.fa-gitkraken {
+  color: #c7cce6;
+}
+
+.submit-arrow {
+  padding-left: 0px;
+  padding-right: 0px;
+}

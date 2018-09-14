@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row center center-align">
+    <p>You've just returned home <i class="fas fa-home"></i> though you can't quite remember where from. What would you like to do?</p>
+
+{{#if tvState}}
+    <div class="row">
+      <form class="" action="/home/tv/false" method="post">
+        <button class="btn waves-effect waves-light center-align" type="submit" name="action">
+          Turn off your TV <i class="fas fa-tv"></i>
+        </button>
+      </form>
+      <span>The TV is ON</span>
+    </div>
+      {{else}}
+        {{#if laptopState}}
+        {{else}}
+      <div class="row">
+        <form class="" action="/home/tv/true" method="post">
+          <button class="btn waves-effect waves-light center-align" type="submit" name="action">
+            Turn on your TV <i class="fas fa-tv"></i>
+          </button>
+        </form>
+      </div>
+    {{/if}}
+{{/if}}
+
+{{#if laptopState}}
+  <div class="row">
+    <form class="" action="/home/laptop/false" method="post">
+      <button class="btn waves-effect waves-light center-align" type="submit" name="action">
+        Turn off your laptop <i class="fas fa-laptop"></i>
+      </button>
+    </form>
+    <span> The Laptop is ON</span>
+  </div>
+{{else}}
+  {{#if tvState}}
+  {{else}}
+  <div class="row">
+    <form class="" action="/home/laptop/true" method="post">
+      <button class="btn waves-effect waves-light center-align" type="submit" name="action">
+        Turn on your laptop <i class="fas fa-laptop"></i>
+      </button>
+    </form>
+  </div>
+  {{/if}}
+{{/if}}
+
+{{#if tvState}}
+
+  {{else}}
+    {{#if laptopState}}
+
+    {{else}}
+      <a class="waves-effect waves-light btn" href="/mailbox">Check your mailbox <i class="fas fa-mail-bulk"></i></a>
+    {{/if}}
+{{/if}}
+  </div>
+</div>
